@@ -6,6 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>webpack-html-dev</title>
 </head>
+<script>
+  function test() {
+    console.log('1: ', a) //undefined
+    const abc={a1:1}
+    function a(){
+      abc.a1=2
+      console.log('3:',abc)
+    }
+
+    if(false){
+    
+      var aa=3
+    }
+    a()
+    console.log('3: ', a) //undefined
+}
+
+test()
+</script>
 <body>
   11111111111111111111111111111222222222222223333333333333
 </body>
